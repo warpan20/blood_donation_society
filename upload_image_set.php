@@ -1,0 +1,9 @@
+<?php 
+session_start();
+if(isset($_GET['user_city'])){
+$_SESSION['upload_image_username']=$_GET['user_city'];
+}
+if(isset($_GET['emailid'])){
+$_SESSION['emailid']=$_GET['emailid'];
+}
+?>

@@ -1,0 +1,11 @@
+<?php
+if(isset($_POST['previous'])){
+if($_SESSION[$innerstringstart]!=1)
+{
+$_SESSION[$innerstringstart]=$_SESSION[$innerstringstart]-5;
+$_SESSION[$innerstringend]=$_SESSION[$innerstringend]-5;}}
+if(isset($_POST['show_more'])){
+$_SESSION[$innerstringstart]=$_SESSION[$innerstringstart]+5;
+$_SESSION[$innerstringend]=$_SESSION[$innerstringend]+5;}
+//*=star_first
+?>
